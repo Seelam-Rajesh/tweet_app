@@ -1,0 +1,25 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Twitter App </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Tweets</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('filters') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="keyword" name="keyword" type="text" placeholder="Enter date to filter tweets" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Filter"></br>
+				</form>
+			</h2>
+		</div>
+		</div>
+	</body>
+</html>
