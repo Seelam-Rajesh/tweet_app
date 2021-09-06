@@ -5,12 +5,10 @@ from IPython.display import HTML
 from tweets import tweet_function
 from sqlalchemy import create_engine
 from flask_sqlalchemy import SQLAlchemy
-from flask_apscheduler import APScheduler
 from flask import Flask, render_template, request, redirect, url_for, session
 # Initializing flask app and database
 app = Flask(__name__)
 engine = create_engine('sqlite:///twitter.db', echo=False)
-cron = APScheduler()
         
 @app.route('/')
 @app.route('/login', methods =['GET', 'POST'])
