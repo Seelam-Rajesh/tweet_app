@@ -5,11 +5,11 @@ import pandas as pd
 
 class tweet_function:
     def tweet(name):
-        # Keys and token
-        CONSUMER_KEY    = "18wZRgoLYoK7RCBSwzOxcjxsV"
-        CONSUMER_SECRET = "0WgsV1Q7zaXjSOx25jJnc7pSExuONbncqd4WIXLTPJhMfjSvrT"
-        ACCESS_KEY      = "2166758150-PxGU2TJfK8IxNPBJXy0oAI2WYwVli05LJW2lVs4"
-        ACCESS_SECRET   = "mz41HwOy7J5i7caamXJKBzuc5OSolqPHePExNQVz7GBn8"
+        # Update Keys and token
+        CONSUMER_KEY    = "Your Secret Key" 
+        CONSUMER_SECRET = "Your Secret Key"
+        ACCESS_KEY      = "Your Secret Key"
+        ACCESS_SECRET   = "Your Secret Key"
         # Authentication
         auth = tw.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
         auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
